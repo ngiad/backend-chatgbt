@@ -17,7 +17,11 @@ app.use(bodyParser.json());
 
 const PORT = 5000;
 
-app.use("/api/user/", user);
+
+app.get("/", (req, res) => {
+  res.send('SERVER ON')
+})
+app.use("/api/user/", user)
 
 
 app.post("/admin",async(req,res,next) => {
