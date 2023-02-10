@@ -12,7 +12,7 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({ origin: '*' }));
+app.use(cors({ origin: 'https://frontend-chatgbt-deploy.vercel.app/' }));
 app.use(bodyParser.json());
 
 const PORT = 5000;
