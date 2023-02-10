@@ -75,5 +75,6 @@ mongoose
     });
   })
   .catch((e) => {
+    console.log(e);
     console.log("Server not Runing error on port ", PORT);
   });
